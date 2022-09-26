@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CompositionalWithOrthogonal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wgB-v7-qPq">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gl5-iX-p6B">
+                                    <size key="itemSize" width="266" height="346"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PizzaCell" id="TgY-nE-ORf" customClass="PizzaCell" customModule="CompositionalWithOrthogonal" customModuleProvider="target">
+                                        <rect key="frame" x="81" y="0.0" width="266" height="346"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="XHv-7v-wQ7">
+                                            <rect key="frame" x="0.0" y="0.0" width="266" height="346"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtF-bl-c47">
+                                                    <rect key="frame" x="4" y="4" width="45.666666666666664" height="31"/>
+                                                    <color key="tintColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margarita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQb-5k-puL">
+                                                    <rect key="frame" x="8" y="201" width="79.333333333333329" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfr-gA-V0I">
+                                                    <rect key="frame" x="214.66666666666666" y="201" width="43.333333333333343" height="31"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOI-JF-lle">
+                                                    <rect key="frame" x="8" y="230" width="208" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem lpsum is simply dummy text of the" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5d-Y2-v8b">
+                                                    <rect key="frame" x="8" y="267" width="208" height="40.666666666666686"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="h7w-eo-VZ6">
+                                                    <rect key="frame" x="8" y="43" width="250" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="5Wx-hp-enk"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="h7w-eo-VZ6" firstAttribute="leading" secondItem="XHv-7v-wQ7" secondAttribute="leading" constant="8" id="0vr-kr-lu8"/>
+                                                <constraint firstItem="FOI-JF-lle" firstAttribute="top" secondItem="yQb-5k-puL" secondAttribute="bottom" constant="8" id="4u1-yA-kZa"/>
+                                                <constraint firstItem="mtF-bl-c47" firstAttribute="top" secondItem="XHv-7v-wQ7" secondAttribute="top" constant="4" id="78t-Yq-vPf"/>
+                                                <constraint firstAttribute="trailing" secondItem="FOI-JF-lle" secondAttribute="trailing" constant="50" id="7Ut-9W-bML"/>
+                                                <constraint firstItem="bfr-gA-V0I" firstAttribute="top" secondItem="h7w-eo-VZ6" secondAttribute="bottom" constant="8" id="Edf-o8-GQw"/>
+                                                <constraint firstItem="FOI-JF-lle" firstAttribute="leading" secondItem="XHv-7v-wQ7" secondAttribute="leading" constant="8" id="OZf-us-f9C"/>
+                                                <constraint firstItem="V5d-Y2-v8b" firstAttribute="leading" secondItem="XHv-7v-wQ7" secondAttribute="leading" constant="8" id="Obc-mp-y75"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mtF-bl-c47" secondAttribute="trailing" constant="50" id="RVD-L3-y7t"/>
+                                                <constraint firstItem="h7w-eo-VZ6" firstAttribute="top" secondItem="mtF-bl-c47" secondAttribute="bottom" constant="8" id="Sv4-S0-LH4"/>
+                                                <constraint firstItem="yQb-5k-puL" firstAttribute="top" secondItem="h7w-eo-VZ6" secondAttribute="bottom" constant="8" id="Uq3-4v-LRb"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="V5d-Y2-v8b" secondAttribute="bottom" constant="8" id="Ysz-h9-c8x"/>
+                                                <constraint firstAttribute="trailing" secondItem="bfr-gA-V0I" secondAttribute="trailing" constant="8" id="bKk-CV-vMK"/>
+                                                <constraint firstItem="mtF-bl-c47" firstAttribute="leading" secondItem="XHv-7v-wQ7" secondAttribute="leading" constant="4" id="eZl-Fj-mYM"/>
+                                                <constraint firstAttribute="trailing" secondItem="h7w-eo-VZ6" secondAttribute="trailing" constant="8" id="gEv-wF-8PN"/>
+                                                <constraint firstItem="bfr-gA-V0I" firstAttribute="trailing" secondItem="h7w-eo-VZ6" secondAttribute="trailing" id="jZo-k2-cJD"/>
+                                                <constraint firstItem="V5d-Y2-v8b" firstAttribute="top" secondItem="FOI-JF-lle" secondAttribute="bottom" constant="16" id="ruj-aS-iDN"/>
+                                                <constraint firstItem="bfr-gA-V0I" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yQb-5k-puL" secondAttribute="trailing" constant="20" id="vjY-NU-d64"/>
+                                                <constraint firstAttribute="trailing" secondItem="V5d-Y2-v8b" secondAttribute="trailing" constant="50" id="wvQ-eR-Sdr"/>
+                                                <constraint firstItem="yQb-5k-puL" firstAttribute="leading" secondItem="XHv-7v-wQ7" secondAttribute="leading" constant="8" id="yGM-gI-svY"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="266" height="346"/>
+                                        <connections>
+                                            <outlet property="pizzaDesc" destination="V5d-Y2-v8b" id="V5E-cK-bDf"/>
+                                            <outlet property="pizzaImage" destination="h7w-eo-VZ6" id="5Zx-zQ-4j1"/>
+                                            <outlet property="pizzaName" destination="yQb-5k-puL" id="Qym-9L-ZCm"/>
+                                            <outlet property="pizzaPrice" destination="FOI-JF-lle" id="3Ba-EB-SBK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wgB-v7-qPq" secondAttribute="bottom" id="4zt-A3-qu3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wgB-v7-qPq" secondAttribute="trailing" id="Dlh-4W-hWI"/>
+                            <constraint firstItem="wgB-v7-qPq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pUA-cw-8kR"/>
+                            <constraint firstItem="wgB-v7-qPq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z8P-ni-XVu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="wgB-v7-qPq" id="zKu-MT-f7m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="pizza" width="333.33334350585938" height="333.33334350585938"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
